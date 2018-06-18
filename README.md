@@ -1,0 +1,1 @@
+This is a README file for Repository1. Repository1 is an attempt to learn how to use Git and GitHub.
