@@ -4,6 +4,8 @@ public class MyClass {
 	private string mName;
 	private int mID;
 
+	private string mTestProperty; // Originally Added in TestBranch
+
 	// MyClass constructor
 	public MyClass(){
 
@@ -26,6 +28,15 @@ public class MyClass {
 		}
 		set {
 			mID = value;
+		}
+	}
+
+	public string TestPropery {
+		get {
+			return mTestProperty;
+		}
+		set {
+			mTestProperty = value;
 		}
 	}
 }
