@@ -4,7 +4,7 @@ public class MyClass {
 	private string mName;
 	private int mID;
 
-	private string mTestProperty; // Originally Added in TestBranch
+	private int mTestProperty; // Originally Added in TestBranch as string, later changed to int
 
 	// MyClass constructor
 	public MyClass(){
@@ -31,7 +31,7 @@ public class MyClass {
 		}
 	}
 
-	public string TestPropery {
+	public int TestPropery {
 		get {
 			return mTestProperty;
 		}
