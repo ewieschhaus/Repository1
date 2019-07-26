@@ -1,0 +1,29 @@
+<ListView ItemsSource="{Binding Items}" x:Name="ItemsListView">
+    <ListView.Resources>
+        <!--<ContextMenu x:Key="ItemContextMenu" Tag="{Binding DataContext, ElementName=ItemsListView}">
+            <MenuItem Header="Delete" Command="{Binding DataContext.DeleteItemCommand, RelativeSource={RelativeSource AncestorType=ListView}}" CommandParameter="{Binding PlacementTarget.DataContext, RelativeSource={RelativeSource AncestorType=ContextMenu}}"/>
+        </ContextMenu>-->
+    </ListView.Resources>
+    <!--<ListView.ItemContainerStyle>
+        <Style TargetType="{x:Type ListViewItem}">
+            <Setter Property="ContextMenu" Value="{StaticResource ItemContextMenu}"/>
+        </Style>
+    </ListView.ItemContainerStyle>-->
+    <ListView.View>
+        <GridView>
+            <GridViewColumn DisplayMemberBinding="{Binding Path=Prop1}">
+                <GridViewColumnHeader Content="Prop 1" Tag="Prop1" Command="{Binding SortByColumnName}" CommandParameter="{Binding Tag, RelativeSource={RelativeSource Self}}"/>
+            </GridViewColumn>
+            <GridViewColumn DisplayMemberBinding="{Binding Path=Prop2}">
+                <GridViewColumnHeader Content="Prop 2" Tag="Prop2" Command="{Binding SortByColumnName}" CommandParameter="{Binding Tag, RelativeSource={RelativeSource Self}}"/>
+            </GridViewColumn>
+            <GridViewColumn>
+                <GridViewColumn.CellTemplate>
+                    <DataTemplate>
+                        <Button Content="Delete" Command="{Binding DataContext.DeleteCommand, RelativeSource={RelativeSource AncestorType=ListView}}" CommandParameter="{Binding}"/>
+                    </DataTemplate>
+                </GridViewColumn.CellTemplate>
+            </GridViewColumn>
+        </GridView>
+    </ListView.View>
+</ListView>
