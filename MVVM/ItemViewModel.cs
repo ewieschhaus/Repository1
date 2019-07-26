@@ -32,7 +32,7 @@ public class ItemViewModel : INotifyPropertyChanged {
         }
     }
 
-    public event eventhandler PropertyChanged;
+    public event PropertyChangedEventHandler PropertyChanged;
 
     private void Notify(string propName) {
         if ( PropertyChanged != null) {
