@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AR_COP.Common
+namespace Eric.Common
 {
     public class ObservableNotifyCollection<T> : ObservableCollection<T> where T: INotifyPropertyChanged
     {
