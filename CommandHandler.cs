@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace AR_COP.Common
+namespace Eric.Common
 {
     /// <summary>
     /// Handler for a Command
